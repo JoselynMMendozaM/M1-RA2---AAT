@@ -1,0 +1,139 @@
+/*BASE STYLE*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+.container{
+    padding: 0;
+    max-width: 100%;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    position: relative;
+    
+}
+/*LOGO*/
+.logos{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.logos img{
+    width: 200px;
+}
+
+
+/* MENU */
+#seccion-menu {
+    height: 60px;
+    background-color: #77021a;
+    padding: 17px;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-container a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+
+}
+
+.mostrar-menu, 
+.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+
+}
+.mostrar-menu{
+    order: 1;
+    text-align: right;
+}
+
+.menu-container a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color: #000000;
+}
+#check{
+    display: none;
+}
+
+/*CONTENIDO*/
+.content{
+height: 80%;
+padding: 15PX;
+}
+/*Footer*/
+footer{
+    padding: 5px;
+    height: 60px;
+    background-color: #77021a;
+    color: #fff;
+    text-align: center;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 800px) {
+    /* BANNER */
+    .banner-container {
+        padding: 20px;
+    }
+    .banner-container h1{
+        font-weight: 400;
+        padding:  10px 0px;
+        font-size: 60px;
+    }
+    /*LOGO*/
+    .logos img{
+        width: 15%;
+    }
+
+    /* MENU */
+    .mostrar-menu, 
+    .esconder-menu{
+        display: block
+
+    }
+
+    .menu-container{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #77021a;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+
+    .menu-container a{
+        display: block;
+        padding: 20px;
+    }
+
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    #check:checked ~ .menu-container {
+        right: 0;
+        
+    }
+
+}

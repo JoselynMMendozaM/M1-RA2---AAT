@@ -1,0 +1,42 @@
+/*contenido*/
+.content{
+    display: grid;
+    grid-template-rows: 10% 90% 5%;
+}
+#sect1{
+    display: flex;
+   justify-content: space-between;
+}
+#sect2{
+    display: flex;
+}
+
+.content .redes img{
+    width: 60px;
+}
+
+.content table, th{
+    border: 2px solid ;
+}
+#sect3{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+/*responsive*/
+@media screen and (max-width: 800px) {
+    .content{
+        display: grid;
+        grid-template-rows: 120px 650px 300px;
+    }
+    #sect1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+
+}
