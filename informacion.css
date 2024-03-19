@@ -1,0 +1,174 @@
+/*contenido*/
+.content-container{
+    display: grid;
+    padding: 0 80px;
+}
+#sect1{
+    display: flex;
+   justify-content: space-between;
+   padding: 10px 30px;
+}
+#sect1 .redes h1{
+    width: 60px;
+}
+h1{
+    color:  #77021a;
+}
+#sect1 .redes img{
+    width: 80px;
+}
+#sect2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px 50px;
+    padding: 40px 0;
+}
+.art-1, 
+.art-2, 
+.art-3{
+ padding: 20px;
+ border: 2px solid ;
+ border-radius: 40px;
+ color: white;
+}
+.art-1{
+ background-color: #315799;
+}
+ 
+.art-2{
+ background-color: #4e4e4e;
+}
+ 
+.art-3{
+ background-color: #7c727b;
+}
+#sect2 h3{
+    text-align: center;
+}
+#sect2 p{
+    text-align: justify;
+}
+
+.notice{
+    text-align: center;
+    padding: 10px;
+}
+#sect3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 50px;
+    padding: 40px 0;
+}
+.notice-1,
+.notice-2,
+.notice-3,
+.notice-4{
+    position: relative;
+  }
+.notice-1 h3,
+.notice-2 h3,
+.notice-3 h3,
+.notice-4 h3{
+    text-align: right;
+  }
+.notice-1 img{
+    display: block;
+    width: 800px;
+    height: 700px;
+  }
+
+.notice-2 img{
+    display: block;
+    width: 800px;
+    height: 710px;
+  }
+
+.notice-3 img{
+    display: block;
+    width: 800px;
+    height: 800px;
+  }
+  
+.notice-4 img {
+    display: block;
+    width: 800px;
+    height: 800px;
+  }
+  
+.notice-1 input{
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.notice-2 input{
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.notice-3 input{
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.notice-4 input {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  input{
+    background-color: #77021a;
+    color: white;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.notice-1 input:hover,
+.notice-2 input:hover,
+.notice-3 input:hover,
+.notice-4 input:hover{
+    color: #000000;
+    background-color: #580615;
+}
+
+/*responsive*/
+@media screen and (max-width: 800px) {
+    #sect1{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+   
+    }
+    #sect1 .redes{
+        padding: 30px;
+    }
+    #sect1 h1{
+        padding: 20px;
+
+    }
+    #sect2{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px 20px;
+    }
+    #sect3{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px 20px;
+    }
+    #sect4{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px 20px;
+    }
+ 
+    
+}

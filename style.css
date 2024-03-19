@@ -59,6 +59,7 @@ header{
 .mostrar-menu:hover,
 .esconder-menu:hover{
     color: #000000;
+    background-color: #580615;
 }
 #check{
     display: none;
