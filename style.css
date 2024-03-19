@@ -1,6 +1,7 @@
 /*BASE STYLE*/
 *{
-    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body{
@@ -10,29 +11,22 @@ body{
     text-transform: uppercase;
 }
 .container{
-    padding: 0;
-    max-width: 100%;
-    height: 100%;
-    margin: auto;
+    width: 100%;
+    max-width: 1920px;
     display: grid;
-    position: relative;
-    
+    grid-row-gap: 25px 20px;
+    grid-column-gap: 20px;
 }
-/*LOGO*/
-.logos{
-    padding: 10px;
+header{
     display: flex;
     justify-content: space-between;
-
+    height: 80px;
+    padding: 20px;
 }
-.logos img{
-    width: 200px;
-}
-
 
 /* MENU */
 #seccion-menu {
-    height: 60px;
+    height: 30px;
     background-color: #77021a;
     padding: 17px;
     color: #fff;
@@ -69,42 +63,20 @@ body{
 #check{
     display: none;
 }
-
-/*CONTENIDO*/
-.content{
-height: 80%;
-padding: 15PX;
-}
-/*Footer*/
+/*footer*/
 footer{
-    padding: 5px;
-    height: 60px;
     background-color: #77021a;
     color: #fff;
     text-align: center;
+    height: 50px;
+   
 }
-
 /*RESPONSIVE*/
 @media screen and (max-width: 800px) {
-    /* BANNER */
-    .banner-container {
-        padding: 20px;
-    }
-    .banner-container h1{
-        font-weight: 400;
-        padding:  10px 0px;
-        font-size: 60px;
-    }
-    /*LOGO*/
-    .logos img{
-        width: 15%;
-    }
-
     /* MENU */
     .mostrar-menu, 
     .esconder-menu{
         display: block
-
     }
 
     .menu-container{
