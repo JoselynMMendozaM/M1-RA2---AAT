@@ -1,22 +1,26 @@
 /*contenido*/
 .content-container{
+    max-width: 100%;
     display: grid;
-    padding: 0 80px;
+    padding: 0 40px;
 }
+/*SECTION 1*/
 #sect1{
-    display: flex;
+   display: flex;
    justify-content: space-between;
-   padding: 10px 30px;
-}
-#sect1 .redes h1{
-    width: 60px;
-}
-h1{
-    color:  #77021a;
+   padding: 10px 10px;
 }
 #sect1 .redes img{
     width: 80px;
 }
+#sect1 .redes h1{
+    width: 90px;
+}
+h1{
+    color:  #77021a;
+}
+
+/*SECTIO 2*/
 #sect2{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -30,99 +34,93 @@ h1{
  border: 2px solid ;
  border-radius: 40px;
  color: white;
+ text-align: justify;
+
 }
 .art-1{
- background-color: #315799;
+    background-color: #315799;
 }
- 
+    
 .art-2{
- background-color: #4e4e4e;
-}
- 
+     background-color: #4e4e4e;
+ }
+    
 .art-3{
- background-color: #7c727b;
+    background-color: #7c727b;
 }
+
 #sect2 h3{
     text-align: center;
 }
-#sect2 p{
-    text-align: justify;
-}
-
 .notice{
     text-align: center;
-    padding: 10px;
 }
+
+/*SECTION 3*/
 #sect3{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px 50px;
-    padding: 40px 0;
+    gap: 20px 40px;
+    padding: 20px 0; 
 }
-.notice-1,
-.notice-2,
-.notice-3,
-.notice-4{
-    position: relative;
-  }
-.notice-1 h3,
-.notice-2 h3,
-.notice-3 h3,
-.notice-4 h3{
-    text-align: right;
-  }
 .notice-1 img{
     display: block;
-    width: 800px;
+    width: 600px;
     height: 700px;
   }
 
 .notice-2 img{
     display: block;
-    width: 800px;
-    height: 710px;
+    width: 600px;
+    height: 700px;
   }
 
 .notice-3 img{
     display: block;
-    width: 800px;
-    height: 800px;
+    width: 600px;
+    height: 700px;
   }
   
 .notice-4 img {
     display: block;
-    width: 800px;
-    height: 800px;
+    width: 600px;
+    height: 700px;
   }
-  
-.notice-1 input{
-    position: absolute;
-    top: 95%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  h3{
+    text-align: right;
+    margin-right: 100px;
   }
 
+  /*BUTTONS*/
+.notice-1 input{
+    position: relative;
+    top: -50px;
+    left: 300px;
+    transform: translate(-50%, -50%);
+    
+  }
 .notice-2 input{
-    position: absolute;
-    top: 95%;
-    left: 50%;
+    position: relative;
+    top: -50px;
+    left: 300px;
     transform: translate(-50%, -50%);
   }
 
 .notice-3 input{
-    position: absolute;
-    top: 95%;
-    left: 50%;
+    position: relative;
+    top: -50px;
+    left: 300px;
     transform: translate(-50%, -50%);
   }
 
 .notice-4 input {
-    position: absolute;
-    top: 95%;
-    left: 50%;
+    position: relative;
+    top: -50px;
+    left: 300px;
     transform: translate(-50%, -50%);
   }
-  input{
+
+input{
     background-color: #77021a;
     color: white;
     width: 300px;
@@ -163,12 +161,9 @@ h1{
         display: grid;
         grid-template-columns: 1fr;
         gap: 20px 20px;
+        align-items: center;
     }
-    #sect4{
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px 20px;
-    }
+   
  
     
 }
