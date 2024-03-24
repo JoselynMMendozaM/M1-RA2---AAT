@@ -1,0 +1,169 @@
+/*contenido*/
+.content-container{
+    max-width: 100%;
+    display: grid;
+    padding: 0 40px;
+}
+/*SECTION 1*/
+#sect1{
+   display: flex;
+   justify-content: space-between;
+   padding: 10px 10px;
+}
+#sect1 .redes img{
+    width: 80px;
+}
+#sect1 .redes h1{
+    width: 90px;
+}
+h1{
+    color:  #77021a;
+}
+
+/*SECTIO 2*/
+#sect2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px 50px;
+    padding: 40px 0;
+}
+.art-1, 
+.art-2, 
+.art-3{
+ padding: 20px;
+ border: 2px solid ;
+ border-radius: 40px;
+ color: white;
+ text-align: justify;
+
+}
+.art-1{
+    background-color: #315799;
+}
+    
+.art-2{
+     background-color: #4e4e4e;
+ }
+    
+.art-3{
+    background-color: #7c727b;
+}
+
+#sect2 h3{
+    text-align: center;
+}
+.notice{
+    text-align: center;
+}
+
+/*SECTION 3*/
+#sect3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 40px;
+    padding: 20px 0; 
+}
+.notice-1 img{
+    display: block;
+    width: 600px;
+    height: 700px;
+  }
+
+.notice-2 img{
+    display: block;
+    width: 600px;
+    height: 700px;
+  }
+
+.notice-3 img{
+    display: block;
+    width: 600px;
+    height: 700px;
+  }
+  
+.notice-4 img {
+    display: block;
+    width: 600px;
+    height: 700px;
+  }
+  h3{
+    text-align: right;
+    margin-right: 100px;
+  }
+
+  /*BUTTONS*/
+.notice-1 input{
+    position: relative;
+    top: -50px;
+    left: 300px;
+    transform: translate(-50%, -50%);
+    
+  }
+.notice-2 input{
+    position: relative;
+    top: -50px;
+    left: 300px;
+    transform: translate(-50%, -50%);
+  }
+
+.notice-3 input{
+    position: relative;
+    top: -50px;
+    left: 300px;
+    transform: translate(-50%, -50%);
+  }
+
+.notice-4 input {
+    position: relative;
+    top: -50px;
+    left: 300px;
+    transform: translate(-50%, -50%);
+  }
+
+input{
+    background-color: #77021a;
+    color: white;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.notice-1 input:hover,
+.notice-2 input:hover,
+.notice-3 input:hover,
+.notice-4 input:hover{
+    color: #000000;
+    background-color: #580615;
+}
+
+/*responsive*/
+@media screen and (max-width: 800px) {
+    #sect1{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+   
+    }
+    #sect1 .redes{
+        padding: 30px;
+    }
+    #sect1 h1{
+        padding: 20px;
+
+    }
+    #sect2{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px 20px;
+    }
+    #sect3{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px 20px;
+        align-items: center;
+    }
+   
+ 
+    
+}
